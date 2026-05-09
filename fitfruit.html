@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFruit Hub | Paradise Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body class="fitfruit-theme">
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader" style="border-top-color: #2ECC71; box-shadow: 0 0 20px rgba(46, 204, 113, 0.4);"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" style="background: rgba(46, 204, 113, 0.5); box-shadow: 0 0 15px rgba(46, 204, 113, 0.8);"></div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <nav class="navbar">
+        <div class="logo" style="color: #2ECC71; text-shadow: 0 0 10px rgba(46,204,113,0.5);">FitFruit Hub</div>
+        <ul class="nav-link">
+            <li><a href="index.html">Gym Home</a></li>
+            <li><a href="fitfruit.html" class="active">Diet Bowls</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span style="background: #2ECC71;"></span>
+            <span style="background: #2ECC71;"></span>
+            <span style="background: #2ECC71;"></span>
+        </div>
+    </nav>
+
+    <section class="hero-wrapper" id="home" style="background-image: linear-gradient(180deg, rgba(5, 16, 8, 0.8), rgba(5, 16, 8, 0.9)), url('Images/gold_hero.png');">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>
+                    Fuel Your Workout with <br>
+                    <span style="color: #2ECC71;">Premium Fruit Bowls</span>
+                </h1>
+                <h2 style="color: #F9FFF9;">Eat Clean, Train Mean.</h2>
+                <p>
+                    Our exclusive diet partner provides 100% fresh, organic, and perfectly balanced fruit cups designed for post-workout recovery and muscle growth.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn" style="background: #2ECC71; color: #000;">Explore Menu</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" style="padding: 100px 70px;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h1 style="font-size: 44px; color: #2ECC71; margin-bottom: 10px;">Our Healthy Bowls</h1>
+            <p style="color: #cbd5f5; font-size: 18px;">Perfect macros for perfect gains.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: auto;">
+            <!-- Bowl 1 -->
+            <div class="fruit-card">
+                <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=500&auto=format&fit=crop&q=60" alt="Berry Blast">
+                <h3 style="color: #2ECC71; font-size: 24px; margin-bottom: 10px;">Antioxidant Berry Blast</h3>
+                <p style="color: #F9FFF9; margin-bottom: 15px;">Rich in antioxidants. Blueberries, strawberries, and blackberries.</p>
+                <p style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">₹149</p>
+                <a href="https://wa.me/917499853518?text=Hi, I would like to order the Antioxidant Berry Blast bowl." target="_blank" class="btn" style="padding: 10px 20px; font-size: 14px;">Order on WhatsApp</a>
+            </div>
+            
+            <!-- Bowl 2 -->
+            <div class="fruit-card">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=60" alt="Tropical Protein">
+                <h3 style="color: #2ECC71; font-size: 24px; margin-bottom: 10px;">Tropical Protein Fix</h3>
+                <p style="color: #F9FFF9; margin-bottom: 15px;">High energy for pre-workout. Banana, mango, and coconut flakes.</p>
+                <p style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">₹129</p>
+                <a href="https://wa.me/917499853518?text=Hi, I would like to order the Tropical Protein Fix bowl." target="_blank" class="btn" style="padding: 10px 20px; font-size: 14px;">Order on WhatsApp</a>
+            </div>
+
+            <!-- Bowl 3 -->
+            <div class="fruit-card">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&auto=format&fit=crop&q=60" alt="Citrus Detox">
+                <h3 style="color: #2ECC71; font-size: 24px; margin-bottom: 10px;">Citrus Fat-Loss Detox</h3>
+                <p style="color: #F9FFF9; margin-bottom: 15px;">Perfect for cutting. Orange, kiwi, grapefruit, and mint.</p>
+                <p style="font-size: 20px; font-weight: bold; margin-bottom: 20px;">₹139</p>
+                <a href="https://wa.me/917499853518?text=Hi, I would like to order the Citrus Fat-Loss Detox bowl." target="_blank" class="btn" style="padding: 10px 20px; font-size: 14px;">Order on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Footer for FitFruit -->
+    <footer class="modern-footer" style="background: #051008;">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 style="font-size: 28px; font-weight: bold; color: #2ECC71;">FitFruit Hub</h3>
+                <p>The official diet partner of Paradise Fitness. Fresh, organic, and perfectly macro-balanced.</p>
+            </div>
+            <div class="footer-col">
+                <h3 style="color: #2ECC71;">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Back to Gym</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FitFruit Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="advanced.js"></script>
+</body>
+</html>

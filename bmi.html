@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programs | Paradise Fitness</title>
+    <title>BMI Calculator | Paradise Fitness</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="advanced.css">
 </head>
@@ -19,6 +19,7 @@
 
     <!-- Toast Container -->
     <div id="toastContainer" class="toast-container"></div>
+
     <nav class="navbar">
                 <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
             <img src="Images/logo.jpeg" alt="Logo" style="width: 85px; height: 85px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);">
@@ -27,8 +28,8 @@
         <ul class="nav-link">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="programs.html" class="active">Programs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="bmi.html" class="active">BMI Calculator</a></li>
             <li><a href="plans.html">Plans</a></li>
             <li><a href="contact.html">Contact</a></li>
 </ul>
@@ -39,50 +40,31 @@
         </div>
     </nav>
 
-    <section class="programs">
-        <div class="programs-header">
-            <h1>Our Training Programs</h1>
-            <p>Choose the right program to achieve your fitness goals</p>
-        </div>
-        <div class="programs-grid">
-            <div class="programs-card">
-                <h3>Weight Training</h3>
-                <p>Build muscle strength with guided weight training workouts.</p>
-            </div>
-            <div class="programs-card">
-                <h3>Cardio Training</h3>
-                <p>Improve stamina and burn calories with high-energy cardio.</p>
-            </div>
-            <div class="programs-card">
-                <h3>Personal Training</h3>
-                <p>Get one-on-one guidance from certified professional trainers.</p>
-            </div>
-            <div class="programs-card">
-                <h3>Zumba / Yoga</h3>
-                <p>Enjoy fun workouts and flexibility training for a healthy body.</p>
-            </div>
-            <div class="programs-card">
-                <h3>Weight Training</h3>
-                <p>Build muscle strength with guided weight training workouts.</p>
-            </div>
-            <div class="programs-card">
-                <h3>CrossFit</h3>
-                <p>High-intensity workouts to improve strength and endurance.</p>
-            </div>
-            <div class="programs-card">
-                <h3>Strength and Conditioning</h3>
-                <p>Enhance overall performance and physical conditioning</p>
-            </div>
-            <div class="programs-card">
-                <h3>Strength and Conditioning</h3>
-                <p>Enhance overall performance and physical conditioning</p>
-            </div>
-            <div class="programs-card">
-                <h3>Strength and Conditioning</h3>
-                <p>Enhance overall performance and physical conditioning</p>
-            </div>
+    <section class="hero-wrapper" id="home" style="min-height: 100vh; padding-top: 120px; display: flex; align-items: center; justify-content: center; background-image: linear-gradient(180deg, rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.95)), url('Images/gold_secondary.png');">
+        
+        <div class="bmi-container" style="width: 100%; z-index: 10;">
+            <h1 style="color: #fbbf24; font-size: 36px; margin-bottom: 10px;">Check Your BMI</h1>
+            <p style="color: #cbd5f5; margin-bottom: 30px;">Calculate your Body Mass Index to find the perfect fitness program for you.</p>
 
+            <form id="bmiForm">
+                <div class="bmi-input-group">
+                    <label for="bmiWeight">Weight (kg)</label>
+                    <input type="number" id="bmiWeight" placeholder="e.g. 70" required step="0.1">
+                </div>
+                <div class="bmi-input-group">
+                    <label for="bmiHeight">Height (cm)</label>
+                    <input type="number" id="bmiHeight" placeholder="e.g. 175" required step="0.1">
+                </div>
+                <button type="submit" class="btn" style="width: 100%; border: none; padding: 15px; font-size: 18px; cursor: pointer; border-radius: 10px;">Calculate BMI</button>
+            </form>
+
+            <div id="bmiResult" class="bmi-result-box">
+                <!-- Results injected by advanced.js -->
+            </div>
         </div>
+
+    </section>
+
     <!-- Floating Actions -->
     <div class="floating-actions">
         <a href="https://wa.me/917499853518" target="_blank" class="action-btn whatsapp-float" title="Chat with us">
@@ -93,9 +75,6 @@
                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm3.98-10.169a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/>
             </svg>
         </a>
-        <button class="action-btn back-to-top" title="Back to top">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
-        </button>
     </div>
 
     <!-- Mobile Bottom Navigation -->
@@ -104,13 +83,13 @@
             <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
             Home
         </a>
-        <a href="programs.html" class="mobile-nav-item active">
+        <a href="programs.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
             Programs
         </a>
-        <a href="plans.html" class="mobile-nav-item">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
-            Plans
+        <a href="bmi.html" class="mobile-nav-item active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            BMI
         </a>
         <a href="fitfruit.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
@@ -118,14 +97,6 @@
         </a>
     </nav>
 
-    <!-- Modern Footer -->
-    
-    <!-- Modern Footer -->
-    <footer class="modern-footer" style="padding-top: 40px;">
-        <div class="footer-bottom" style="text-align: center;">
-            <p>&copy; 2026 Paradise Fitness. All rights reserved.</p>
-        </div>
-    </footer>
     <script src="script.js"></script>
     <script src="advanced.js"></script>
 </body>

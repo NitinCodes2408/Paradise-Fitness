@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Paradise Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <nav class="navbar">
+                <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
+            <img src="Images/logo.jpeg" alt="Logo" style="width: 85px; height: 85px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);">
+            <div class="logo">Paradise Fitness</div>
+        </div>
+        <ul class="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="faq.html" class="active">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+</ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero-wrapper" style="min-height: 40vh; padding-top: 120px; display: flex; align-items: center; justify-content: center; background-image: linear-gradient(180deg, rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 1));">
+        <div style="text-align: center; z-index: 10;">
+            <h1 style="color: #fbbf24; font-size: 44px; margin-bottom: 10px;">Frequently Asked Questions</h1>
+            <p style="color: #cbd5f5; font-size: 18px;">Everything you need to know about Paradise Fitness.</p>
+        </div>
+    </section>
+
+    <section style="padding: 50px 70px; background: #121212; min-height: 50vh;">
+        <div style="max-width: 800px; margin: auto;">
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    What are your opening hours?
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>We are open from 5:00 AM to 11:00 PM, Monday through Saturday. On Sundays, we are open from 6:00 AM to 2:00 PM.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Do you provide personal training?
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We have certified personal trainers specializing in weight loss, muscle gain, CrossFit, and mobility. You can book sessions at the front desk or via our website.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is the FitFruit Diet Plan included in the membership?
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>FitFruit Hub is our official diet partner. While some premium annual plans include weekly diet bowls, they are generally available for purchase separately at a discounted rate for members.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    Can I freeze my membership?
+                    <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, members on the 6-Month and 1-Year plans can freeze their membership for up to 30 days due to travel or medical reasons.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            Home
+        </a>
+        <a href="programs.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
+            Programs
+        </a>
+        <a href="faq.html" class="mobile-nav-item active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+            FAQ
+        </a>
+        <a href="plans.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+            Plans
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="advanced.js"></script>
+</body>
+</html>

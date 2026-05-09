@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Trainers | Paradise Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <nav class="navbar">
+                <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
+            <img src="Images/logo.jpeg" alt="Logo" style="width: 85px; height: 85px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);">
+            <div class="logo">Paradise Fitness</div>
+        </div>
+        <ul class="nav-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="trainers.html" class="active">Trainers</a></li>
+            <li><a href="plans.html">Plans</a></li>
+            <li><a href="contact.html">Contact</a></li>
+</ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="hero-wrapper" id="home" style="min-height: 60vh; padding-top: 120px; display: flex; align-items: center; justify-content: center; background-image: linear-gradient(180deg, rgba(18, 18, 18, 0.65), rgba(18, 18, 18, 0.95)), url('Images/gold_secondary.png');">
+        <div style="text-align: center; z-index: 10;">
+            <h1 style="color: #fbbf24; font-size: 50px; margin-bottom: 10px;">Meet Our Experts</h1>
+            <p style="color: #cbd5f5; font-size: 18px;">Train with certified professionals dedicated to your success.</p>
+        </div>
+    </section>
+
+    <section style="padding: 60px 70px; background: #121212;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1200px; margin: auto;">
+            
+            <!-- Trainer 1 -->
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=500&auto=format&fit=crop&q=60" alt="Trainer" class="trainer-img">
+                <div class="trainer-info">
+                    <h3>Alex Mercer</h3>
+                    <p>Head Coach & CrossFit Specialist</p>
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 15px;">
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">Strength</span>
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">HIIT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer 2 -->
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?w=500&auto=format&fit=crop&q=60" alt="Trainer" class="trainer-img">
+                <div class="trainer-info">
+                    <h3>Sarah Jenkins</h3>
+                    <p>Yoga & Flexibility Expert</p>
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 15px;">
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">Yoga</span>
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">Mobility</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer 3 -->
+            <div class="trainer-card">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&auto=format&fit=crop&q=60" alt="Trainer" class="trainer-img">
+                <div class="trainer-info">
+                    <h3>David Chen</h3>
+                    <p>Bodybuilding & Nutrition</p>
+                    <div style="display: flex; gap: 10px; justify-content: center; margin-bottom: 15px;">
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">Hypertrophy</span>
+                        <span style="background: rgba(251, 191, 36, 0.1); color: #fbbf24; padding: 5px 10px; border-radius: 5px; font-size: 12px;">Diet</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modern Footer -->
+    <footer class="modern-footer">
+        <!-- Content added via global updates -->
+        <div class="footer-bottom" style="text-align: center;">
+            <p>&copy; 2026 Paradise Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            Home
+        </a>
+        <a href="programs.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
+            Programs
+        </a>
+        <a href="trainers.html" class="mobile-nav-item active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            Trainers
+        </a>
+        <a href="plans.html" class="mobile-nav-item">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+            Plans
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script src="advanced.js"></script>
+</body>
+</html>
