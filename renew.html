@@ -20,7 +20,7 @@
 
     <!-- Toast Container -->
     <div id="toastContainer" class="toast-container"></div>
-    <nav class="navbar">
+    <nav class="navbar premium-navbar">
                 <div class="logo-container" style="display: flex; align-items: center; gap: 15px;">
             <img src="Images/logo.jpeg" alt="Logo" style="width: 85px; height: 85px; object-fit: cover; border-radius: 50%; box-shadow: 0 0 15px rgba(251, 191, 36, 0.5);">
             <div class="logo">Paradise Fitness</div>
@@ -40,53 +40,136 @@
         </div>
     </nav>
 
-    <section class="renew-page">
-        <h1>Renew Your Membership</h1>
-        <p class="renew-sub">Please select your gym plan to renew,<br> and confirm on Whatsapp</p>
+    <section class="premium-renew-page">
+        <!-- Background Effects -->
+        <div class="cinematic-bg"></div>
+        <div class="blur-circle circle-1"></div>
+        <div class="blur-circle circle-2"></div>
+        <div class="particles-container">
+            <span class="particle" style="left: 10%; animation-duration: 5s; animation-delay: 0s;"></span>
+            <span class="particle" style="left: 20%; animation-duration: 7s; animation-delay: 2s;"></span>
+            <span class="particle" style="left: 40%; animation-duration: 6s; animation-delay: 1s;"></span>
+            <span class="particle" style="left: 60%; animation-duration: 8s; animation-delay: 3s;"></span>
+            <span class="particle" style="left: 80%; animation-duration: 5.5s; animation-delay: 0.5s;"></span>
+            <span class="particle" style="left: 95%; animation-duration: 6.5s; animation-delay: 1.5s;"></span>
+        </div>
 
-        <div class="renew-plans" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
-            <div class="renew-card">
-                <h3>1 Month</h3>
-                <p class="price">₹600</p>
-                <a href="#" class="btn" style="display: block; margin-bottom: 10px;" onclick="showPayQRCode('1 Month Plan', 600, event)">Pay via UPI</a>
-                <a href="#" class="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 5px;" onclick="sendWhatsApp('1 Month Plan', 600)">Confirm on Whatsapp</a>
+        <div class="renew-hero">
+            <div class="secure-badge"><i class="fas fa-shield-alt"></i> Fast & Secure Renewal</div>
+            <h1 class="glow-text">Renew Your <span class="highlight">Membership</span></h1>
+            <div class="gradient-line"></div>
+            <p class="renew-sub">Select your gym plan below, pay securely via UPI,<br> and get instant confirmation on WhatsApp.</p>
+            
+            <div class="trust-indicators">
+                <span class="trust-item"><i class="fas fa-bolt"></i> Instant Confirmation</span>
+                <span class="trust-item"><i class="fas fa-clock"></i> 24/7 Online Access</span>
+                <span class="trust-item"><i class="fas fa-users"></i> Trusted by Members</span>
+            </div>
+        </div>
+
+        <div class="renew-plans premium-grid">
+            <!-- 1 Month -->
+            <div class="premium-plan-card fade-up" style="animation-delay: 0.1s;">
+                <div class="card-glow"></div>
+                <div class="plan-header">
+                    <i class="fas fa-calendar-alt plan-icon"></i>
+                    <h3>1 Month</h3>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">₹</span><span class="amount">600</span>
+                </div>
+                <div class="secure-indicator"><i class="fas fa-lock"></i> Secure Payment</div>
+                <div class="plan-actions">
+                    <a href="#" class="btn premium-upi-btn" onclick="showPayQRCode('1 Month Plan', 600, event)">
+                        <i class="fas fa-qrcode"></i> Pay via UPI
+                    </a>
+                    <a href="#" class="whatsapp-btn premium-wa-btn" onclick="sendWhatsApp('1 Month Plan', 600)">
+                        <i class="fab fa-whatsapp"></i> Confirm on Whatsapp
+                    </a>
+                </div>
             </div>
 
-            <div class="renew-card featured" style="position: relative;">
-                <div style="position: absolute; top: -10px; right: -10px; background: #facc15; color: black; font-weight: bold; padding: 5px 10px; border-radius: 5px; font-size: 12px;">POPULAR</div>
-                <h3>3 Months</h3>
-                <p class="price">₹1500</p>
-                <a href="#" class="btn" style="display: block; margin-bottom: 10px;" onclick="showPayQRCode('3 Month Plan', 1500, event)">Pay via UPI</a>
-                <a href="#" class="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 5px;" onclick="sendWhatsApp('3 Month Plan', 1500)">Confirm on Whatsapp</a>
+            <!-- 3 Months -->
+            <div class="premium-plan-card featured-card fade-up" style="animation-delay: 0.2s;">
+                <div class="popular-badge"><i class="fas fa-star"></i> POPULAR</div>
+                <div class="card-glow featured-glow"></div>
+                <div class="plan-header">
+                    <i class="fas fa-calendar-alt plan-icon"></i>
+                    <h3>3 Months</h3>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">₹</span><span class="amount">1500</span>
+                </div>
+                <div class="secure-indicator"><i class="fas fa-lock"></i> Secure Payment</div>
+                <div class="plan-actions">
+                    <a href="#" class="btn premium-upi-btn" onclick="showPayQRCode('3 Month Plan', 1500, event)">
+                        <i class="fas fa-qrcode"></i> Pay via UPI
+                    </a>
+                    <a href="#" class="whatsapp-btn premium-wa-btn" onclick="sendWhatsApp('3 Month Plan', 1500)">
+                        <i class="fab fa-whatsapp"></i> Confirm on Whatsapp
+                    </a>
+                </div>
             </div>
 
-            <div class="renew-card">
-                <h3>6 Months</h3>
-                <p class="price">₹3000</p>
-                <a href="#" class="btn" style="display: block; margin-bottom: 10px;" onclick="showPayQRCode('6 Month Plan', 3000, event)">Pay via UPI</a>
-                <a href="#" class="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 5px;" onclick="sendWhatsApp('6 Month Plan', 3000)">Confirm on Whatsapp</a>
+            <!-- 6 Months -->
+            <div class="premium-plan-card fade-up" style="animation-delay: 0.3s;">
+                <div class="card-glow"></div>
+                <div class="plan-header">
+                    <i class="fas fa-calendar-alt plan-icon"></i>
+                    <h3>6 Months</h3>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">₹</span><span class="amount">3000</span>
+                </div>
+                <div class="secure-indicator"><i class="fas fa-lock"></i> Secure Payment</div>
+                <div class="plan-actions">
+                    <a href="#" class="btn premium-upi-btn" onclick="showPayQRCode('6 Month Plan', 3000, event)">
+                        <i class="fas fa-qrcode"></i> Pay via UPI
+                    </a>
+                    <a href="#" class="whatsapp-btn premium-wa-btn" onclick="sendWhatsApp('6 Month Plan', 3000)">
+                        <i class="fab fa-whatsapp"></i> Confirm on Whatsapp
+                    </a>
+                </div>
             </div>
 
-            <div class="renew-card" style="border: 2px solid #2ECC71;">
-                <div style="position: absolute; top: -10px; right: -10px; background: #2ECC71; color: black; font-weight: bold; padding: 5px 10px; border-radius: 5px; font-size: 12px;">PRO</div>
-                <h3>1 Year Pro</h3>
-                <p class="price">₹5500</p>
-                <a href="#" class="btn" style="display: block; margin-bottom: 10px; background: #2ECC71; color: black;" onclick="showPayQRCode('1 Year Pro Plan', 5500, event)">Pay via UPI</a>
-                <a href="#" class="whatsapp-btn" style="display: block; background: #25D366; color: white; padding: 10px; text-decoration: none; border-radius: 5px;" onclick="sendWhatsApp('1 Year Pro Plan', 5500)">Confirm on Whatsapp</a>
+            <!-- 1 Year Pro -->
+            <div class="premium-plan-card pro-card fade-up" style="animation-delay: 0.4s;">
+                <div class="pro-badge"><i class="fas fa-crown"></i> PRO</div>
+                <div class="card-glow pro-glow"></div>
+                <div class="plan-header">
+                    <i class="fas fa-crown plan-icon pro-icon"></i>
+                    <h3>1 Year Pro</h3>
+                </div>
+                <div class="plan-price pro-price">
+                    <span class="currency">₹</span><span class="amount">5500</span>
+                </div>
+                <div class="secure-indicator"><i class="fas fa-lock"></i> Secure Payment</div>
+                <div class="plan-actions">
+                    <a href="#" class="btn premium-upi-btn pro-btn" onclick="showPayQRCode('1 Year Pro Plan', 5500, event)">
+                        <i class="fas fa-qrcode"></i> Pay via UPI
+                    </a>
+                    <a href="#" class="whatsapp-btn premium-wa-btn" onclick="sendWhatsApp('1 Year Pro Plan', 5500)">
+                        <i class="fab fa-whatsapp"></i> Confirm on Whatsapp
+                    </a>
+                </div>
             </div>
         </div>
 
         <!-- Premium UPI Modal (Re-using ID but with glass classes) -->
         <div class="glass-modal" id="payModal">
-            <div class="glass-modal-content" style="text-align: center;">
-                <h2 id="payModalTitle" style="color: #fbbf24; margin-bottom: 15px;">Pay with UPI</h2>
+            <div class="glass-modal-content premium-modal-content" style="text-align: center;">
+                <h2 id="payModalTitle" style="color: #fbbf24; margin-bottom: 15px;"><i class="fas fa-qrcode"></i> Pay with UPI</h2>
                 <p id="payModalAmount" style="color: #cbd5f5; margin-bottom: 20px;">Scan the QR code to pay securely.</p>
-                <img id="payModalImage" src="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=upi://pay?pa=nitinbhandare135@nyes&pn=Nitin%20Purushottam%20Bhandare" alt="UPI QR Code" style="border-radius: 10px; border: 4px solid #fbbf24; width: 250px; margin-bottom: 20px;">
-                <div style="background: rgba(18, 18, 18, 0.6); padding: 15px; border-radius: 10px; font-size: 14px; color: #94a3b8; margin-bottom: 20px;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;"><span>UPI ID:</span><strong style="color: white; cursor: pointer;" onclick="navigator.clipboard.writeText('nitinbhandare135@nyes'); window.showToast('UPI ID Copied!');">nitinbhandare135@nyes 📋</strong></div>
+                <div class="qr-container">
+                    <img id="payModalImage" src="https://api.qrserver.com/v1/create-qr-code/?size=320x320&data=upi://pay?pa=nitinbhandare135@nyes&pn=Nitin%20Purushottam%20Bhandare" alt="UPI QR Code">
+                </div>
+                <div class="upi-details" style="background: rgba(18, 18, 18, 0.6); padding: 15px; border-radius: 10px; font-size: 14px; color: #94a3b8; margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 5px;"><span>UPI ID:</span><strong style="color: white; cursor: pointer;" onclick="navigator.clipboard.writeText('nitinbhandare135@nyes'); window.showToast('UPI ID Copied!');">nitinbhandare135@nyes <i class="fas fa-copy"></i></strong></div>
                     <div style="display: flex; justify-content: space-between;"><span>Merchant:</span><strong style="color: white;">Paradise Fitness</strong></div>
                 </div>
-                <button class="btn" style="width: 100%; border: none; padding: 15px; background: #fbbf24; color: black; font-weight: bold; border-radius: 10px; cursor: pointer;" onclick="closePayQRCode(); window.showToast('Payment Processing...');">I Have Paid</button>
+                <button class="btn premium-upi-btn w-100" style="width: 100%; border: none; padding: 15px; cursor: pointer; margin-bottom: 15px;" onclick="closePayQRCode(); window.showToast('Payment Processing...');">
+                    I Have Paid <i class="fas fa-check-circle"></i>
+                </button>
                 <span class="close-modal" style="position: absolute; top: 15px; right: 20px; font-size: 28px; color: #94a3b8; cursor: pointer;" onclick="closePayQRCode()">&times;</span>
             </div>
         </div>

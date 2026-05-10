@@ -567,3 +567,596 @@
 .trainer-info { padding: 25px; }
 .trainer-info h3 { color: #fbbf24; font-size: 22px; margin-bottom: 5px; }
 .trainer-info p { color: #cbd5f5; margin-bottom: 15px; }
+
+/* ===========================
+   PREMIUM RENEW CARD
+=========================== */
+.premium-renew-card {
+    position: relative;
+    background: rgba(18, 18, 18, 0.7) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+    border-radius: 16px !important;
+    padding: 40px 30px !important;
+    text-align: center;
+    overflow: hidden;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(251, 191, 36, 0.05) !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    animation: fadeUp 1s ease forwards;
+}
+
+.premium-renew-card:hover {
+    transform: translateY(-10px) !important;
+    border-color: rgba(251, 191, 36, 0.8) !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(251, 191, 36, 0.2) !important;
+}
+
+.premium-renew-card .glow-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.15), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.premium-renew-card:hover .glow-bg {
+    opacity: 1;
+    animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.05); }
+}
+
+.premium-renew-card > *:not(.glow-bg):not(.particles-container) {
+    position: relative;
+    z-index: 1;
+}
+
+.premium-renew-card .mini-badge {
+    background: rgba(251, 191, 36, 0.15);
+    color: #fbbf24;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.premium-renew-card h2 {
+    font-size: 32px !important;
+    color: white !important;
+    margin-bottom: 15px !important;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.premium-renew-card h2 .highlight {
+    color: #fbbf24;
+    text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+.premium-renew-card .premium-icon {
+    color: #fbbf24;
+    font-size: 26px;
+    vertical-align: middle;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.5));
+}
+
+.premium-renew-card p {
+    font-size: 16px !important;
+    color: #cbd5f5 !important;
+    margin-bottom: 25px !important;
+    line-height: 1.6 !important;
+    max-width: 95%;
+}
+
+.premium-renew-card .secure-text {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.premium-renew-card .secure-text i {
+    color: #2ECC71;
+}
+
+.premium-renew-btn {
+    background: linear-gradient(135deg, #fbbf24, #d97706) !important;
+    color: #121212 !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    padding: 14px 32px !important;
+    border-radius: 30px !important;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none !important;
+    box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3) !important;
+    transition: all 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.premium-renew-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.premium-renew-btn:hover::after {
+    left: 150%;
+}
+
+.premium-renew-btn:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 15px 30px rgba(251, 191, 36, 0.5) !important;
+    color: #000 !important;
+}
+
+.premium-renew-btn i {
+    transition: transform 0.3s ease;
+}
+
+.premium-renew-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Floating Particles */
+.particles-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(251, 191, 36, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+    animation: floatParticle linear infinite;
+    bottom: -10px;
+}
+
+@keyframes floatParticle {
+    0% { transform: translateY(0) scale(0); opacity: 0; }
+    20% { opacity: 1; transform: translateY(-20px) scale(1); }
+    80% { opacity: 1; transform: translateY(-80px) scale(1); }
+    100% { transform: translateY(-100px) scale(0); opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .premium-renew-card {
+        padding: 30px 20px !important;
+    }
+    .premium-renew-card h2 {
+        font-size: 26px !important;
+    }
+    .premium-renew-card p {
+        font-size: 15px !important;
+    }
+}
+
+/* ===========================
+   PREMIUM RENEW PAGE (renew.html)
+=========================== */
+
+.premium-renew-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 140px 20px 80px;
+    background: #0a0a0a;
+    overflow: hidden;
+    color: white;
+}
+
+.cinematic-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(30, 30, 30, 0.8) 0%, rgba(10, 10, 10, 1) 100%);
+    z-index: 0;
+}
+
+.blur-circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.circle-1 {
+    width: 400px;
+    height: 400px;
+    background: rgba(251, 191, 36, 0.15);
+    top: -100px;
+    left: -100px;
+}
+
+.circle-2 {
+    width: 500px;
+    height: 500px;
+    background: rgba(46, 204, 113, 0.1);
+    bottom: -150px;
+    right: -100px;
+}
+
+.renew-hero {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.secure-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ECC71;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.renew-hero .glow-text {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.renew-hero .glow-text .highlight {
+    color: #fbbf24;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.5);
+}
+
+.gradient-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+    margin: 0 auto 25px;
+}
+
+.renew-hero .renew-sub {
+    font-size: 18px;
+    color: #cbd5f5;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.trust-item i {
+    color: #fbbf24;
+}
+
+/* Premium Plan Cards */
+.premium-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.premium-plan-card {
+    background: rgba(18, 18, 18, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.premium-plan-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(251, 191, 36, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(251, 191, 36, 0.15);
+}
+
+.premium-plan-card .card-glow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.15), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.premium-plan-card:hover .card-glow {
+    opacity: 1;
+}
+
+.plan-header {
+    margin-bottom: 20px;
+}
+
+.plan-icon {
+    font-size: 32px;
+    color: #fbbf24;
+    margin-bottom: 15px;
+}
+
+.premium-plan-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.plan-price {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.plan-price .currency {
+    font-size: 20px;
+    color: #fbbf24;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.plan-price .amount {
+    font-size: 48px;
+    font-weight: 800;
+    color: white;
+    text-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+}
+
+.secure-indicator {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.secure-indicator i {
+    color: #2ECC71;
+}
+
+.plan-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.premium-upi-btn, .premium-wa-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px !important;
+    border-radius: 30px !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    text-decoration: none;
+    transition: all 0.3s ease !important;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.premium-upi-btn {
+    background: linear-gradient(135deg, #fbbf24, #d97706) !important;
+    color: #121212 !important;
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.25) !important;
+}
+
+.premium-wa-btn {
+    background: linear-gradient(135deg, #25D366, #128C7E) !important;
+    color: white !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25) !important;
+}
+
+.premium-upi-btn:hover, .premium-wa-btn:hover {
+    transform: translateY(-3px) scale(1.02) !important;
+}
+
+.premium-upi-btn:hover {
+    box-shadow: 0 15px 30px rgba(251, 191, 36, 0.4) !important;
+}
+
+.premium-wa-btn:hover {
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4) !important;
+}
+
+/* Button Shine Effect */
+.premium-upi-btn::after, .premium-wa-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: skewX(-20deg);
+    transition: 0.5s;
+}
+
+.premium-upi-btn:hover::after, .premium-wa-btn:hover::after {
+    left: 150%;
+}
+
+/* Featured / Popular Card */
+.featured-card {
+    border: 1px solid rgba(251, 191, 36, 0.5);
+    transform: scale(1.03);
+}
+
+.featured-card:hover {
+    transform: scale(1.03) translateY(-12px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #fbbf24, #d97706);
+    color: #121212;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: -2px 2px 10px rgba(251, 191, 36, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Pro Card */
+.pro-card {
+    border: 1px solid rgba(46, 204, 113, 0.5);
+}
+
+.pro-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #2ECC71, #27AE60);
+    color: #121212;
+    font-weight: 800;
+    font-size: 12px;
+    padding: 6px 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: -2px 2px 10px rgba(46, 204, 113, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.pro-card .card-glow {
+    background: radial-gradient(circle, rgba(46, 204, 113, 0.15), transparent 70%);
+}
+
+.pro-icon, .pro-card .currency {
+    color: #2ECC71;
+}
+
+.pro-card .amount {
+    text-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
+}
+
+.pro-btn {
+    background: linear-gradient(135deg, #2ECC71, #27AE60) !important;
+    box-shadow: 0 8px 20px rgba(46, 204, 113, 0.25) !important;
+}
+
+.pro-btn:hover {
+    box-shadow: 0 15px 30px rgba(46, 204, 113, 0.4) !important;
+}
+
+/* Premium Navbar specifically for this page if needed */
+.premium-navbar {
+    background: rgba(10, 10, 10, 0.85) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.premium-navbar .nav-link a:hover {
+    color: #fbbf24;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
+}
+
+/* Modal Updates */
+.premium-modal-content {
+    background: rgba(15, 15, 15, 0.95) !important;
+    border: 1px solid rgba(251, 191, 36, 0.3) !important;
+    backdrop-filter: blur(25px) !important;
+}
+
+.premium-modal-content .qr-container img {
+    border: 3px solid rgba(251, 191, 36, 0.5) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 0 30px rgba(251, 191, 36, 0.2) !important;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.premium-modal-content .qr-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .premium-renew-page {
+        padding-top: 120px;
+    }
+    .renew-hero .glow-text {
+        font-size: 38px;
+    }
+    .featured-card {
+        transform: scale(1);
+    }
+    .featured-card:hover {
+        transform: translateY(-8px);
+    }
+}
