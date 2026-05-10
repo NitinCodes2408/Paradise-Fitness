@@ -60,7 +60,7 @@ revealElements.forEach(el => {
 // Contact --> WhatsApp (Send Message)
 
 let currentPage = window.location.pathname.split("/").pop();
-if (currentPage === "") currentPage = "contact.html";
+if (currentPage === "") currentPage = "index.html";
 
 document.querySelectorAll(".nav-link a").forEach(link => {
   if (link.getAttribute("href") === currentPage) {
