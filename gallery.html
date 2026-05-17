@@ -6,6 +6,8 @@
     <title>Gallery | Paradise Fitness</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="advanced.css">
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
 </head>
 <body>
 
@@ -25,13 +27,24 @@
             <div class="logo">Paradise Fitness</div>
         </div>
         <ul class="nav-link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="plans.html">Plans</a></li>
-            <li><a href="contact.html">Contact</a></li>
-</ul>
+            <li><a href="index.html" data-i18n="home">Home</a></li>
+            <li><a href="about.html" data-i18n="about">About</a></li>
+            <li><a href="programs.html" data-i18n="programs">Programs</a></li>
+            <li><a href="gallery.html" class="active" data-i18n="gallery">Gallery</a></li>
+            <li><a href="plans.html" data-i18n="plans">Plans</a></li>
+            <li><a href="contact.html" data-i18n="contact">Contact</a></li>
+        </ul>
+
+        <div class="language-selector" id="languageSelector">
+            <div class="current-lang">
+                <span>🇬🇧</span> English
+            </div>
+            <div class="lang-dropdown">
+                <div class="lang-option" data-lang="en"><span>🇬🇧</span> English</div>
+                <div class="lang-option" data-lang="hi"><span>🇮🇳</span> हिंदी</div>
+                <div class="lang-option" data-lang="mr"><span>🇮🇳</span> मराठी</div>
+            </div>
+        </div>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -41,8 +54,8 @@
 
     <section class="gallery">
         <div class="gallery-header">
-            <h1>Our Gym Gallery</h1>
-            <p>Take a look at our training environment and facilities</p>
+            <h1 data-i18n="gallery">Our Gym Gallery</h1>
+            <p data-i18n="gallery_desc_text">Take a look at our training environment and facilities</p>
         </div>
         <div class="gallery-grid">
             <div class="gallery-item">
@@ -83,19 +96,19 @@
     <nav class="mobile-bottom-nav">
         <a href="index.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-            Home
+            <span data-i18n="home">Home</span>
         </a>
         <a href="programs.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z"/></svg>
-            Programs
+            <span data-i18n="programs">Programs</span>
         </a>
         <a href="plans.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
-            Plans
+            <span data-i18n="plans">Plans</span>
         </a>
         <a href="fitfruit.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
-            Diet
+            <span data-i18n="diet_partner">Diet</span>
         </a>
     </nav>
 

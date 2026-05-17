@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="advanced.css">
+    <script src="translations.js"></script>
+    <script src="i18n.js"></script>
     <title>Contact | Paradise Fitness</title>
 </head>
 
@@ -29,13 +31,25 @@
             <div class="logo">Paradise Fitness</div>
         </div>
         <ul class="nav-link">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="plans.html">Plans</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="index.html" data-i18n="home">Home</a></li>
+            <li><a href="about.html" data-i18n="about">About</a></li>
+            <li><a href="programs.html" data-i18n="programs">Programs</a></li>
+            <li><a href="gallery.html" data-i18n="gallery">Gallery</a></li>
+            <li><a href="plans.html" data-i18n="plans">Plans</a></li>
+            <li><a href="contact.html" class="active" data-i18n="contact">Contact</a></li>
         </ul>
+
+        <div class="language-selector" id="languageSelector">
+            <div class="current-lang">
+                <span>🇬🇧</span> English
+            </div>
+            <div class="lang-dropdown">
+                <div class="lang-option" data-lang="en"><span>🇬🇧</span> English</div>
+                <div class="lang-option" data-lang="hi"><span>🇮🇳</span> हिंदी</div>
+                <div class="lang-option" data-lang="mr"><span>🇮🇳</span> मराठी</div>
+            </div>
+        </div>
+
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -44,36 +58,36 @@
     </nav>
     <section class="contact-page">
         <div class="contact-header">
-            <h1>Get in Touch</h1>
-            <p>Contact with paradise fitness for membership & enquiries</p>
+            <h1 data-i18n="get_in_touch">Get in Touch</h1>
+            <p data-i18n="contact_desc">Contact with paradise fitness for membership & enquiries</p>
         </div>
         <div class="contact-container">
             <div class="contact-info">
-                <h2>Gym Details</h2>
-                <p><strong>Address</strong><br>
+                <h2 data-i18n="gym_details">Gym Details</h2>
+                <p><strong data-i18n="address">Address</strong><br>
                     Paradise Fitness Unisex Gym, Behind Reliance Trends Dhanora road, Gadchiroli 442605.</p>
-                <p><strong>Phone:</strong><br>
+                <p><strong data-i18n="phone">Phone:</strong><br>
                     Nitin Bhandare : +91 7499853518</p>
-                <p><strong>Email:</strong><br>
+                <p><strong data-i18n="email">Email:</strong><br>
                     paradisefitness@gmail.com</p>
-                <p><strong>Working Hours</strong><br>
+                <p><strong data-i18n="working_hours">Working Hours</strong><br>
                     Monday - Saturday: <br> Morning : 4 AM to 10 AM & <br> Evening : 4 PM to 10 PM</p>
             </div>
             <div class="contact-form">
-                <h2>Send Enquiry</h2>
+                <h2 data-i18n="send_enquiry">Send Enquiry</h2>
                 <form id="whatsappForm">
-                    <input type="text" name="name" placeholder="Enter Your Name" required>
-                    <input type="tel" name="phone" placeholder="Enter Your Phone Number" required>
-                    <input type="email" name="email" placeholder="Enter Your Email">
-                    <textarea name="message" placeholder="Enter Your Message"></textarea>
-                    <button type="submit">Send Message</button>
+                    <input type="text" name="name" placeholder="Enter Your Name" required data-i18n="name_placeholder">
+                    <input type="tel" name="phone" placeholder="Enter Your Phone Number" required data-i18n="phone_placeholder">
+                    <input type="email" name="email" placeholder="Enter Your Email" data-i18n="email_placeholder">
+                    <textarea name="message" placeholder="Enter Your Message" data-i18n="message_placeholder"></textarea>
+                    <button type="submit" data-i18n="send_message">Send Message</button>
                 </form>
             </div>
         </div>
 
         <div class="map-renew-wrapper">
             <div class="map-section">
-                <h2>Find Us On Map</h2>
+                <h2 data-i18n="find_us">Find Us On Map</h2>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.6679349394385!2d80.01148817340484!3d20.185850816198617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2cf90045b65b9d%3A0x3529b604bea454fc!2sParadise%20Fitness%20Unisex%20Gym!5e1!3m2!1sen!2sin!4v1767624685553!5m2!1sen!2sin"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -89,12 +103,12 @@
                     <span class="particle" style="left: 70%; animation-duration: 4.5s; animation-delay: 0.5s;"></span>
                     <span class="particle" style="left: 90%; animation-duration: 6s; animation-delay: 1.5s;"></span>
                 </div>
-                <div class="mini-badge"><i class="fas fa-bolt"></i> Quick Online Renewal</div>
-                <h2><i class="fas fa-crown premium-icon"></i> Membership <span class="highlight">Expired?</span></h2>
-                <p>Agar aapka gym plan expire ho gaya hai, <br> to yahin se online payment krke apna plan renew kre.</p>
-                <div class="secure-text"><i class="fas fa-lock"></i> 100% Secure Payment</div>
+                <div class="mini-badge"><i class="fas fa-bolt"></i> <span data-i18n="quick_renewal">Quick Online Renewal</span></div>
+                <h2><i class="fas fa-crown premium-icon"></i> <span data-i18n="membership_expired">Membership Expired?</span></h2>
+                <p data-i18n="renew_desc">Agar aapka gym plan expire ho gaya hai, <br> to yahin se online payment krke apna plan renew kre.</p>
+                <div class="secure-text"><i class="fas fa-lock"></i> <span data-i18n="secure_payment">100% Secure Payment</span></div>
                 <a href="renew.html" class="btn premium-renew-btn">
-                    <span>Renew Membership</span> <i class="fas fa-arrow-right"></i>
+                    <span data-i18n="renew">Renew Membership</span> <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -127,28 +141,28 @@
             <svg viewBox="0 0 24 24">
                 <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
             </svg>
-            Home
+            <span data-i18n="home">Home</span>
         </a>
         <a href="programs.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24">
                 <path
                     d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29z" />
             </svg>
-            Programs
+            <span data-i18n="programs">Programs</span>
         </a>
         <a href="plans.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24">
                 <path
                     d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z" />
             </svg>
-            Plans
+            <span data-i18n="plans">Plans</span>
         </a>
         <a href="fitfruit.html" class="mobile-nav-item">
             <svg viewBox="0 0 24 24">
                 <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
             </svg>
-            Diet
+            <span data-i18n="diet_partner">Diet</span>
         </a>
     </nav>
 
