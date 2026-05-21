@@ -9,6 +9,19 @@ const translations = {
         contact: "Contact",
         renew: "Renew Membership",
 
+        // About Page
+        about_p1: "Paradise Fitness is more than just a gym — it is a place where fitness becomes a lifestyle. We focus on helping you build strength, confidence, and a healthy body with proper guidance.",
+        about_p2: "Whether you are a beginner or an advanced athlete, our goal is to support you with the right training, motivation, and discipline to help you achieve real and lasting results.",
+        pt_certified: "Certified & Experienced Trainers",
+        pt_modern: "Modern Gym Equipment",
+        pt_clean: "Clean & Motivating Environment",
+        pt_support: "Personal Training Support",
+        pt_couples: "For Couples",
+        our_journey: "Our Journey",
+        j2024: "Founded with a small 2000 sq ft facility and a big dream.",
+        j2026_1: "Expanded to a premium 10,000 sq ft fitness center with modern gear.",
+        j2026_2: "Partnered with FitFruit Hub to introduce integrated diet planning.",
+
         // Hero
         hero_title: "Build Your Body with",
         hero_subtitle: "Paradise Fitness Unisex GYM",
@@ -95,6 +108,19 @@ const translations = {
         contact: "संपर्क",
         renew: "मेम्बरशिप रिन्यू करें",
 
+        // About Page
+        about_p1: "पैराडाइज फिटनेस सिर्फ एक जिम से कहीं अधिक है — यह एक ऐसी जगह है जहां फिटनेस एक जीवन शैली बन जाती है। हम उचित मार्गदर्शन के साथ आपको ताकत, आत्मविश्वास और एक स्वस्थ शरीर बनाने में मदद करने पर ध्यान केंद्रित करते हैं।",
+        about_p2: "चाहे आप शुरुआती हों या उन्नत एथलीट, हमारा लक्ष्य वास्तविक और स्थायी परिणाम प्राप्त करने में आपकी सहायता के लिए सही प्रशिक्षण, प्रेरणा और अनुशासन के साथ आपका समर्थन करना है।",
+        pt_certified: "प्रमाणित और अनुभवी ट्रेनर",
+        pt_modern: "आधुनिक जिम उपकरण",
+        pt_clean: "स्वच्छ और प्रेरक वातावरण",
+        pt_support: "व्यक्तिगत प्रशिक्षण सहायता",
+        pt_couples: "जोड़ों के लिए",
+        our_journey: "हमारी यात्रा",
+        j2024: "एक छोटी 2000 वर्ग फुट सुविधा और एक बड़े सपने के साथ स्थापित।",
+        j2026_1: "आधुनिक गियर के साथ एक प्रीमियम 10,000 वर्ग फुट फिटनेस सेंटर में विस्तार किया।",
+        j2026_2: "एकीकृत आहार योजना शुरू करने के लिए फिटफ्रूट हब के साथ भागीदारी की।",
+
         // Hero
         hero_title: "अपना शरीर बनाएं",
         hero_subtitle: "पैराडाइज फिटनेस यूनिसेक्स जिम",
@@ -180,6 +206,19 @@ const translations = {
         plans: "प्लॅन्स",
         contact: "संपर्क",
         renew: "मेंबरशिप रिन्यू करा",
+
+        // About Page
+        about_p1: "पॅराडाईज फिटनेस हे फक्त एका जिमपेक्षा खूप काही आहे — हे असे ठिकाण आहे जिथे फिटनेस ही जीवनशैली बनते. योग्य मार्गदर्शनासह तुम्हाला ताकद, आत्मविश्वास आणि निरोगी शरीर बनविण्यात मदत करण्यावर आमचा भर आहे.",
+        about_p2: "तुम्ही नवशिक्या असाल किंवा अनुभवी खेळाडू असाल, खरे आणि कायमस्वरूपी परिणाम मिळविण्यासाठी तुम्हाला योग्य प्रशिक्षण, प्रेरणा आणि शिस्तीसह मदत करणे हे आमचे ध्येय आहे.",
+        pt_certified: "प्रमाणित आणि अनुभवी ट्रेनर",
+        pt_modern: "आधुनिक जिम उपकरणे",
+        pt_clean: "स्वच्छ आणि प्रेरक वातावरण",
+        pt_support: "वैयक्तिक प्रशिक्षण मदत",
+        pt_couples: "जोडप्यांसाठी",
+        our_journey: "आमचा प्रवास",
+        j2024: "एका छोट्या 2000 चौरस फूट सुविधेसह आणि मोठ्या स्वप्नासह स्थापित.",
+        j2026_1: "आधुनिक उपकरणांसह प्रीमियम 10,000 चौरस फूट फिटनेस सेंटरमध्ये विस्तार केला.",
+        j2026_2: "एकात्मिक आहार योजना सुरू करण्यासाठी फिटफ्रूट हबसह भागीदारी केली.",
 
         // Hero
         hero_title: "आपले शरीर बनवा",
