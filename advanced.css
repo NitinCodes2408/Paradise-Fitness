@@ -1149,14 +1149,53 @@
 @media (max-width: 768px) {
     .premium-renew-page {
         padding-top: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow-x: hidden;
     }
     .renew-hero .glow-text {
-        font-size: 38px;
+        font-size: 32px;
+    }
+    .renew-hero .renew-sub {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .trust-indicators {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .premium-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 100%;
+    }
+    .premium-plan-card {
+        padding: 30px 20px;
     }
     .featured-card {
         transform: scale(1);
     }
     .featured-card:hover {
         transform: translateY(-8px);
+    }
+    .plan-price .amount {
+        font-size: 40px;
+    }
+    .premium-upi-btn, .premium-wa-btn {
+        padding: 12px 15px !important;
+        font-size: 15px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .renew-hero .glow-text {
+        font-size: 28px;
+    }
+    .premium-plan-card {
+        padding: 25px 15px;
+    }
+    .plan-price .amount {
+        font-size: 34px;
     }
 }
