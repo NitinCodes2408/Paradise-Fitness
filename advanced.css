@@ -150,6 +150,12 @@
     text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);
 }
 
+@media (min-width: 769px) {
+    .desktop-hide-home {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     .mobile-bottom-nav { display: flex; }
     .floating-actions { bottom: 80px; } /* Above mobile nav */
