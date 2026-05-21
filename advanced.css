@@ -1186,7 +1186,23 @@
         padding: 12px 15px !important;
         font-size: 15px !important;
     }
+    .premium-modal-content {
+        padding: 25px 15px !important;
+    }
+    .premium-modal-content .qr-container img {
+        max-width: 100%;
+        height: auto;
+    }
+    .premium-modal-content .upi-details {
+        font-size: 12px !important;
+    }
+    .premium-modal-content .upi-details div {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
 }
+
 
 @media (max-width: 480px) {
     .renew-hero .glow-text {
