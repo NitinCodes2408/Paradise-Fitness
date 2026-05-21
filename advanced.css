@@ -168,7 +168,7 @@
 }
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 2fr 1fr 1fr;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto 50px;
