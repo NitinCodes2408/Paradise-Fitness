@@ -85,7 +85,7 @@ if (whatsappForm) {
       `Email: ${email}%0A` +
       `Message: ${message}`;
 
-    const whatsappURL = `https://wa.me/917499853518?text=${text}`;
+    const whatsappURL = `https://wa.me/919422828242?text=${text}`;
 
     window.open(whatsappURL, "_blank");
   });
@@ -99,7 +99,7 @@ function sendWhatsApp(plan, amount) {
       `I have paid ₹${amount} for ${plan}.%0A` +
       `Please renew my membership.`;
 
-    const phoneNumber = "917499853518"; 
+    const phoneNumber = "919422828242"; 
 
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank");
@@ -111,7 +111,7 @@ function showPayQRCode(plan, amount, event) {
     const qrTitle = document.getElementById('payModalTitle');
     const qrAmount = document.getElementById('payModalAmount');
     const qrImg = document.getElementById('payModalImage');
-    const upiId = 'nitinbhandare135@nyes';
+    const upiId = 'chakru.u@okaxis';
     const qrData = encodeURIComponent(`upi://pay?pa=${upiId}&pn=Nitin%20Purushottam%20Bhandare&tn=${encodeURIComponent(plan)}&am=${amount}`);
 
     if (qrTitle) qrTitle.textContent = `Pay ₹${amount} for ${plan}`;
@@ -135,5 +135,3 @@ if (payModal) {
 document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closePayQRCode();
 });
-
-
